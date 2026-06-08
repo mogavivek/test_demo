@@ -1,0 +1,82 @@
+2026-06-06 21:41:02,350 [INFO] Selected param: add_one_item
+2026-06-06 21:41:02,375 [INFO] All item has been removed from the list
+2026-06-06 21:41:02,378 [INFO] Selected param: add_two_item
+2026-06-06 21:41:02,381 [INFO] All item has been removed from the list
+2026-06-06 21:41:02,388 [INFO] Selected param: add_three_item
+2026-06-06 21:41:02,392 [INFO] All item has been removed from the list
+2026-06-06 21:43:58,003 [INFO] Selected param: add_one_item
+2026-06-06 21:43:58,006 [INFO] All item has been removed from the list
+2026-06-06 21:43:58,009 [INFO] Selected param: add_two_item
+2026-06-06 21:43:58,012 [INFO] All item has been removed from the list
+2026-06-06 21:43:58,018 [INFO] Selected param: add_three_item
+2026-06-06 21:43:58,021 [INFO] All item has been removed from the list
+2026-06-06 21:47:29,543 [INFO] Selected param: add_one_item
+2026-06-06 21:47:29,552 [INFO] All item has been removed from the list
+2026-06-06 21:47:29,556 [INFO] Selected param: add_two_item
+2026-06-06 21:47:29,568 [INFO] All item has been removed from the list
+2026-06-06 21:47:29,574 [INFO] Selected param: add_three_item
+2026-06-06 21:47:29,586 [INFO] All item has been removed from the list
+2026-06-06 21:49:41,171 [INFO] Selected param: add_one_item
+2026-06-06 21:49:41,174 [INFO] All item has been removed from the list
+2026-06-06 21:49:41,178 [INFO] Selected param: add_two_item
+2026-06-06 21:49:41,185 [INFO] All item has been removed from the list
+2026-06-06 21:49:41,189 [INFO] Selected param: add_three_item
+2026-06-06 21:49:41,191 [INFO] All item has been removed from the list
+2026-06-06 21:52:21,015 [INFO] Apple item added in the list
+2026-06-06 21:52:21,390 [INFO] Selected param: add_one_item
+2026-06-06 21:52:21,391 [INFO] All item has been removed from the list
+2026-06-06 21:52:21,401 [INFO] Selected param: add_two_item
+2026-06-06 21:52:21,404 [INFO] All item has been removed from the list
+2026-06-06 21:52:21,408 [INFO] Selected param: add_three_item
+2026-06-06 21:52:21,416 [INFO] All item has been removed from the list
+2026-06-06 21:52:21,582 [INFO] clear the list
+2026-06-07 16:10:01,109 [INFO] {'user_id': 1, 'content': 'my test content', 'task_id': 'test_task_id', 'is_done': True}
+2026-06-07 16:14:13,030 [INFO] {'user_id': 1, 'content': 'my test content', 'task_id': 'test_task_id', 'is_done': True}
+2026-06-07 16:51:39,627 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 16:51:39,627 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 16:56:24,601 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 16:56:24,601 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:00:02,324 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:00:02,326 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:01:47,670 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:01:47,670 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:02:44,089 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:02:44,089 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:03:46,852 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:03:46,852 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:06:42,866 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:06:42,866 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:09:48,751 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:09:48,751 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:13:15,000 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 3, 'content': 'my third content', 'task_id': 'test_third_related_id', 'is_done': False}]}
+2026-06-07 17:13:15,007 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 4, 'content': 'my fourth content', 'task_id': 'test_fourth_related_id', 'is_done': False}]}
+2026-06-07 17:13:15,018 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:13:15,018 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:15:23,564 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': True}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}]}
+2026-06-07 17:15:23,572 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:15:23,580 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:15:40,256 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': True}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}]}
+2026-06-07 17:15:40,264 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:15:40,264 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:15:40,272 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 3, 'content': 'my third content', 'task_id': 'test_third_related_id', 'is_done': False}]}
+2026-06-07 17:15:40,288 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 4, 'content': 'my fourth content', 'task_id': 'test_fourth_related_id', 'is_done': False}]}
+2026-06-07 17:21:08,589 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:21:08,589 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:21:08,597 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 3, 'content': 'my third content', 'task_id': 'test_third_related_id', 'is_done': False}]}
+2026-06-07 17:21:08,615 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 4, 'content': 'my fourth content', 'task_id': 'test_fourth_related_id', 'is_done': False}]}
+2026-06-07 17:25:52,053 [INFO] {'error': 'User not found'}
+2026-06-07 17:25:52,063 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:25:52,063 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:25:52,096 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 3, 'content': 'my third content', 'task_id': 'test_third_related_id', 'is_done': False}]}
+2026-06-07 17:25:52,113 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 4, 'content': 'my fourth content', 'task_id': 'test_fourth_related_id', 'is_done': False}]}
+2026-06-07 17:26:15,141 [INFO] the data is: {'error': 'User not found'}
+2026-06-07 17:26:15,174 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:26:15,174 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:26:15,192 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 3, 'content': 'my third content', 'task_id': 'test_third_related_id', 'is_done': False}]}
+2026-06-07 17:26:15,224 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 4, 'content': 'my fourth content', 'task_id': 'test_fourth_related_id', 'is_done': False}]}
+2026-06-07 17:26:39,776 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': True}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}]}
+2026-06-07 17:26:39,782 [INFO] {'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}
+2026-06-07 17:26:39,782 [INFO] {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}
+2026-06-07 17:26:39,797 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 3, 'content': 'my third content', 'task_id': 'test_third_related_id', 'is_done': False}]}
+2026-06-07 17:26:39,802 [INFO] {'tasks': [{'user_id': 1, 'content': 'my first content', 'task_id': 'test_first_related_id', 'is_done': False}, {'user_id': 2, 'content': 'my second content', 'task_id': 'test_second_related_id', 'is_done': False}, {'user_id': 4, 'content': 'my fourth content', 'task_id': 'test_fourth_related_id', 'is_done': False}]}
+2026-06-07 17:26:39,814 [INFO] the data is: {'error': 'User not found'}

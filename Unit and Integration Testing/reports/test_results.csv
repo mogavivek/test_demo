@@ -1,0 +1,7 @@
+Test,Result
+tests/test_todo_api.py::test_can_call_endpoint,passed
+tests/test_todo_api.py::test_can_create_task,passed
+tests/test_todo_api.py::test_can_update_task,passed
+tests/test_todo_api.py::test_post_new_tasks_in_main_payload[new_tasks0],passed
+tests/test_todo_api.py::test_post_new_tasks_in_main_payload[new_tasks1],passed
+tests/test_todo_api.py::test_can_delete_some_task_in_payload,passed
