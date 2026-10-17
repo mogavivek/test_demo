@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Make the page responsive on different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title used by browser and automated tests. -->
+    <title>QA Automation Demo</title>
+
+    <!-- Load the application's CSS file. -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Main application heading. -->
+        <h1>QA Automation Demo</h1>
+
+        <!-- Short project description. -->
+        <p class="description">
+            This application is used to demonstrate
+            Playwright, Pytest and CI/CD automation.
+        </p>
+
+        <!-- Message input section. -->
+        <section class="card">
+
+            <label for="message">
+                Enter a message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your test message here..."
+                rows="5"
+            ></textarea>
+
+            <!-- Button used by Playwright tests. -->
+            <button
+                id="submit-button"
+                type="button"
+                onclick="submitMessage()"
+            >
+                Submit
+            </button>
+
+            <!-- Result area updated after API response. -->
+            <div
+                id="result"
+                class="result"
+                aria-live="polite"
+            >
+                Result will appear here.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        /**
+         * Submit the entered message to the Flask backend.
+         *
+         * The function sends a POST request to /submit and
+         * displays the backend response on the webpage.
+         */
+        async function submitMessage() {
+
+            // Read the value entered by the user.
+            const message = document
+                .getElementById("message")
+                .value
+                .trim();
+
+            // Find the result area.
+            const result = document.getElementById("result");
+
+            // Validate empty input before calling the backend.
+            if (!message) {
+                result.textContent = "Please enter a message.";
+                result.className = "result error";
+                return;
+            }
+
+            // Show temporary status while the request is running.
+            result.textContent = "Submitting...";
+            result.className = "result";
+
+            try {
+
+                // Send the message to the Flask API.
+                const response = await fetch("/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        message: message
+                    })
+                });
+
+                // Convert the API response to JSON.
+                const data = await response.json();
+
+                // Handle successful response.
+                if (response.ok && data.success) {
+
+                    result.textContent =
+                        data.message + " Submitted: " + data.submitted_text;
+
+                    result.className = "result success";
+
+                } else {
+
+                    // Handle validation/API errors.
+                    result.textContent = data.message;
+                    result.className = "result error";
+                }
+
+            } catch (error) {
+
+                // Handle unexpected frontend/API communication errors.
+                result.textContent =
+                    "Unable to communicate with the server.";
+
+                result.className = "result error";
+
+                console.error(error);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

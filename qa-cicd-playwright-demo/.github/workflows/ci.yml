@@ -1,0 +1,127 @@
+name: QA Automation CI
+
+# Run the pipeline whenever code is pushed to GitHub
+# or when a pull request is created/updated.
+
+on:
+  push:
+    branches:
+      - master
+    
+  
+  pull_request:
+    branches:
+      - master
+
+
+jobs:
+
+  test:
+
+    # Use a fresh Ubuntu machine provided by GitHub.
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # --------------------------------------------------
+      # 1. Download the repository code
+      # --------------------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # --------------------------------------------------
+      # 2. Install Python
+      # --------------------------------------------------
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      
+      # --------------------------------------------------
+      # 3. Install Python dependencies
+      # --------------------------------------------------
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+
+      # --------------------------------------------------
+      # 4. Install Playwright browser
+      # --------------------------------------------------
+
+      - name: Install Playwright Chromium
+        run: |
+          playwright install --with-deps chromium
+      
+      # --------------------------------------------------
+      # 5. Start Flask application
+      # --------------------------------------------------
+
+      - name: Start Flask application
+        run: |
+          python app/app.py > flask.log 2>&1 &
+        
+      # --------------------------------------------------
+      # 6. Wait until the application is available
+      # --------------------------------------------------
+
+      - name: Wait for application
+        run: |
+          python - <<'PY'
+          import time
+          import urllib.request
+
+          url = "http://127.0.0.1:5000/health"
+
+          for attempt in range(30):
+              try:
+                  response = urllib.request.urlopen(url, timeout=2)
+
+                  if response.status == 200:
+                      print("Application is ready.")
+                      break
+
+              except Exception:
+                  print(
+                      f"Application not ready yet. "
+                      f"Attempt {attempt + 1}/30"
+                  )
+
+              time.sleep(1)
+
+          else:
+              raise RuntimeError(
+                  "Application did not become ready."
+              )
+          PY
+      
+      # --------------------------------------------------
+      # 7. Run Pytest + Playwright
+      # --------------------------------------------------
+
+      - name: Run UI automation tests
+        run: |
+          pytest \
+            --browser chromium \
+            --tracing retain-on-failure \
+            --screenshot only-on-failure \
+            --junitxml=test-results.xml
+      
+      # --------------------------------------------------
+      # 8. Upload test results
+      # --------------------------------------------------
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-test-results
+          path: |
+            test-results/
+            test-results.xml
+            flask.log

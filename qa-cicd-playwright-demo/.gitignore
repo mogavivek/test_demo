@@ -1,0 +1,38 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment files containing secrets
+.env
+
+# Keep only the example environment file
+!.env.example
+
+# Test/cache files
+.pytest_cache/
+
+# Coverage files
+.coverage
+htmlcov/
+coverage.xml
+
+# Playwright artifacts
+test-results/
+playwright-report/
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
